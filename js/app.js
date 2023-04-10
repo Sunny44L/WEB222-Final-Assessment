@@ -60,11 +60,11 @@ form.addEventListener('submit', function(event){
 })
 
     var err1 = document.getElementById("errName");
-    err.style.display = "none";
+    err1.style.display = "none";
     var err2 = document.getElementById("errRating");
-    err.style.display = "none";
+    err2.style.display = "none";
     var err3 = document.getElementById("errReview");
-    err.style.display = "none";
+    err3.style.display = "none";
     
 const nameT = document.getElementById('name').value.trim();
 const rating = document.querySelector('input[name = "rating"]:checked');
