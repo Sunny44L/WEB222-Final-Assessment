@@ -59,23 +59,27 @@ form.addEventListener('submit', function(event){
     event.preventDefault();
 })
 
+    var err1 = document.getElementById("errName");
+    err.style.display = "none";
+    var err2 = document.getElementById("errRating");
+    err.style.display = "none";
+    var err3 = document.getElementById("errReview");
+    err.style.display = "none";
+    
 const nameT = document.getElementById('name').value.trim();
 const rating = document.querySelector('input[name = "rating"]:checked');
 const review = document.getElementById('review').value.trim();
 
 if(nameT ==="" || nameT.length > 20){
-    var err = document.getElementById("errName");
-    err.style.display = "block";
+    err1.style.display = "block";
     return false;
 }
 if(!rating){
-    var err = document.getElementById("errRating");
-    err.style.display = "block";
+    err2.style.display = "block";
     return false;
 }
 if(review ===""){
-    var err = document.getElementById("errReview");
-    err.style.display = "block";
+    err3.style.display = "block";
     return false;
 }
 
